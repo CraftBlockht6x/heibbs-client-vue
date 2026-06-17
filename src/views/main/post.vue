@@ -1262,7 +1262,7 @@ export default defineComponent({
             .catch(() => {});
           break;
         case "share":
-          const shareUrl = `https://www.heibbs.net/#/post/${
+          const shareUrl = `https://heibbs.chaxil.top/#/post/${
             mainPost.value!.pid
           }`;
           navigator.clipboard
@@ -1327,7 +1327,7 @@ export default defineComponent({
             .catch(() => {});
           break;
         case "share":
-          const commentUrl = `https://www.heibbs.net/#/post/${comment.pid}`;
+          const commentUrl = `https://heibbs.chaxil.top/#/post/${comment.pid}`;
           navigator.clipboard
             .writeText(commentUrl)
             .then(() => ElMessage.success("评论链接已复制到剪贴板"))
