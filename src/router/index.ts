@@ -28,7 +28,7 @@ const routes: Array<RouteRecordRaw> = [
         meta: {
           Navbar: true,//顶部导航栏
           Tabbar: true,//底部导航栏
-          Login: true,//是否需要登录
+          Login: false,//是否需要登录
           NavReturnbar: false,
           Copyright: false,
           title: "首页",
@@ -54,7 +54,7 @@ const routes: Array<RouteRecordRaw> = [
           Navbar: false,
           Tabbar: false,
           NavReturnbar: true,
-          Login: true,
+          Login: false,
           Copyright: true,
           title: "帖子",
         },
@@ -118,7 +118,7 @@ const routes: Array<RouteRecordRaw> = [
         meta: {
           Navbar: true,
           Tabbar: true,
-          Login: true,
+          Login: false,
           Copyright: true,
           title: "集市",
         },
@@ -127,7 +127,7 @@ const routes: Array<RouteRecordRaw> = [
         path: "/search",
         name: "search",
         component: () => import("../views/main/search.vue"),
-        meta: { Navbar: false, Tabbar: true, Login: true, NavReturnbar: true, Copyright: true, title: "搜索" },
+        meta: { Navbar: false, Tabbar: true, Login: false, NavReturnbar: true, Copyright: true, title: "搜索" },
       },
       {
         path: "/gugu",
@@ -136,7 +136,7 @@ const routes: Array<RouteRecordRaw> = [
         meta: {
           Navbar: true,
           Tabbar: true,
-          Login: true,
+          Login: false,
           Copyright: true,
           title: "鸽门",
         },
@@ -148,7 +148,7 @@ const routes: Array<RouteRecordRaw> = [
         meta: {
           Navbar: true,
           Tabbar: true,
-          Login: true,
+          Login: false,
           NavReturnbar: false,
           Copyright: true,
           title: "会馆列表",
@@ -158,7 +158,7 @@ const routes: Array<RouteRecordRaw> = [
         path: "/block-finance",
         name: "block-finance",
         component: () => import("../views/user/block-finance.vue"),
-        meta: { Navbar: false, Tabbar: true, Login: true, NavReturnbar: true, Copyright: true, title: "会馆财政" },
+        meta: { Navbar: false, Tabbar: true, Login: false, NavReturnbar: true, Copyright: true, title: "会馆财政" },
       },
       {
         path: "/block/:id",
@@ -167,7 +167,7 @@ const routes: Array<RouteRecordRaw> = [
         meta: {
           Navbar: false,
           Tabbar: true,
-          Login: true,
+          Login: false,
           NavReturnbar: true,
           Copyright: true,
           title: "会馆",
@@ -218,7 +218,7 @@ const routes: Array<RouteRecordRaw> = [
         meta: {
           Navbar: false,
           Tabbar: false,
-          Login: true,
+          Login: false,
           NavReturnbar: true,
           Copyright: true,
           title: "用户组",
